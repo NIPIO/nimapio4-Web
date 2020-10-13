@@ -1,0 +1,200 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#sobremi" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE MI</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contacto" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#sobremi" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE MI</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contacto" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container" id="home">
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="sobremi">
+  <h3 class="w3-center">SOBRE MI</h3>
+  <p class="w3-center"><em>A veces vale la pena permanecer en la cama el lunes, en lugar de pasar el resto de la semana depurando el código del lunes. </em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="img/yo.png" class="w3-round w3-image w3-hover-opacity-off" alt="Yo" width="500" height="333">
+    </div>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Me encanta andar en bicicleta. Y que me pegue el sol en la cara. Pero más me gustan las dos juntas.<br><br>También me gusta programar, pensar y escribir el código. Aprender métodos nuevos, lenguajes, estructuras. <br> En realidad, lo que más me apasiona de ser programador es la instantánea sensación de refrescar y ver que el problema que me llevó varías horas (o días) arreglar, finalmente está arreglado. En ese momento me dí cuenta, y me doy cuenta, de lo lindo del proceso de pensar, escribir, chocarse, revisar, pensar, escribir y terminar disfrutando. <br><br> Me siento cómodo desarrollando en el backend con PHP -lenguaje con el que inicié y me formé profesionalmente- , pero también me divierte seguir formandome como frontend. <br><br>Mis objetivos profesionales son perfeccionarme en PHP y seguir aprendiendo Vue.js y desarrollo mobile, en el cual pude dar mis primeros pasos de la mano de Ionic</p>
+    </div>
+  </div>
+
+
+	<div class="w3-light-grey mb-3">
+		<div class="w3-container w3-padding-small w3-center w3-wide" style="width:85%; background-color: #9d6ef5"><i class="fa fa-code"></i><b>HTML5 + CSS3</b>
+		</div>
+	</div>
+	
+	
+	<div class="w3-light-grey mb-3">
+		<div class="w3-container w3-padding-small w3-center w3-wide" style="width:75%; background-color: #adec2c"><i class="fa fa-desktop"></i><b>PHP</b>
+		</div>
+	</div>
+	
+	
+	<div class="w3-light-grey mb-3">
+		<div class="w3-container w3-padding-small w3-center w3-wide" style="width:65%; background-color: #67ebf7"><i class="fa fa-mobile-phone"></i><b>Ionic</b>
+		</div>
+	</div>
+	
+	
+	<div class="w3-light-grey mb-3">
+		<div class="w3-container w3-padding-small w3-center w3-wide" style="width:70%; background-color: #c30936"><i class="fa fa-laptop"></i><b>Javascript</b>  
+		</div>
+	</div>
+	
+	
+	<div class="w3-light-grey mb-3">
+		<div class="w3-container w3-padding-small w3-center w3-wide" style="width:70%; background-color: #f9f1a6  "><i class="fa fa-database"></i><b>SQL</b>
+		</div>
+	</div>
+	
+      <!-- Hide this text on small devices -->
+</div>
+
+<div class="w3-row w3-center w3-white w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5</span><br>
+    Lenguajes
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5</span><br>
+    Websites/Juegos
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4</span><br>
+    Mobile Apps
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">12</span><br>
+    Tasas de café para este sitio
+  </div>
+</div>
+
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MIS TRABAJOS</h3>
+  <p class="w3-center">
+    <em>
+      En mi GitHub están los códigos fuente <br> 
+      Clickea en las imagenes para ver más detalles.
+    </em>
+  </p><br>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="img/trabajos/nimapio.jpg" style="width:100%" onclick="onClick(this, null)" class="w3-hover-opacity"  alt="Este trabajo fue mi anterior sitio web, desarrollado con Javascript puro, Jquery y Particles.js" title="Primer Sitio Personal">
+    </div>
+
+    <div class="w3-col m3">
+        <img src="img/trabajos/hlc.png" style="width:100%" onclick="onClick(this, 'https://www.hastalachinaproduccion.com')" class="w3-hover-opacity" alt="Desarrollada con Flexbox, Bootstrap, PHP y Jquery" title="Hasta la china">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/trabajos/wasabi.png" style="width:100%" onclick="onClick(this, 'http://www.wasabiimpresiones.com')" class="w3-hover-opacity"  alt="E-commerce con sistema de autogestión (carga y edición de productos), carrito de compras, comunicado a Mercado Pago y servicio de correo electronico. Desarrollado con Bootstrap, Symfony, SQL y Jquery" title="Wasabi Impresiones">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/trabajos/9gag.png" style="width:100%" onclick="onClick(this,null)" class="w3-hover-opacity"  alt="(Mobile) Galería privada de fotos, con sistema de login y registro de usuarios, vista y carga de nuevas imagenes. Tiene la posibilidad también de compartir la imagen en las principales redes sociales. Desarrollada con componentes nativos del telefono, Ionic 4 y Angular" title="8gag">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/trabajos/tienda.jpg" style="width:100%" onclick="onClick(this, null)" class="w3-hover-opacity"  alt="(Mobile)  Es una tienda con sistema de logueo, carrito de compras y pedidos de orden, comunicada con una API personal escrita en PHP. La información fue obtenida de una base de datos pública. Desarrollada con componentes nativos del telefono, Ionic 4, Angular y PHP" title="Tienda Clasicos">
+    </div>
+
+
+    <div class="w3-col m3">
+      <img src="img/trabajos/sound.jpg" style="width:100%" onclick="onClick(this, null)" class="w3-hover-opacity"  alt="(Mobile) Una simple botonera que reproduce sonidos de distintos personajes famosos, con la posibilidad de reordenar la lista de reproducción. Desarrollada con componentes nativos del telefono, Ionic 4 y Angular" title="Sound App">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/trabajos/qrApp.jpg" style="width:100%" onclick="onClick(this, null)" class="w3-hover-opacity"  alt="(Mobile) Scanner de códigos de barra y códigos QR. Tiene un historial, permite leer códigos que contengan coordenadas, correos, sitios web, crear contactos y agendar reuniones en el telefono" title="QrApp">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img/trabajos/juego.jpg" style="width:100%" onclick="onClick(this, null)" class="w3-hover-opacity"  alt="Es un juego de lucha desarollado con Vue js. Simple, rápido, pero que me permite dar los primeros pasos en este framework." title="Fight">
+    </div>
+
+  </div>
+</div>
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <a href="" target="_blank" id="href01" class="td-none">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+      <p id="description" class="w3-opacity w3-large"></p>
+    </a>
+  </div>
+</div>
+
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contacto">
+  <h3 class="w3-center">DONDE TRABAJO</h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="img/bsas.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Buenos Aires, Argentina<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: nmpiovano@gmail.com<br>
+      </div>
+      <p>¿Nos tomamos algo? Contactame!</p>
+      <form id="contactform">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Mail" required name="mail">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Cuestión" required name="msj">
+        <input class="w3-button w3-right w3-section" type="submit" value="Envialo" style="background: black; color:white">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="bgimg-3 row m-0 "> 
+  <div class="w3-xlarge w3-section text-center m-auto col-12">
+    <a href="http://www.facebook.com/nico.piovanoo" class="w3-hover-opacity td-none "  target="_newtab"><i class="fa fa-facebook-official m-4"></i></a>
+    <a href="nmpcv.pdf"download="Nicolás Piovano CV 2020" class="w3-hover-opacity td-none"  target="_newtab" ><i class="fa fa-file-text-o m-4"></i></a>
+    <a href="https://www.linkedin.com/in/nicol%C3%A1s-m-piovano-911557131/" class="w3-hover-opacity td-none"  target="_newtab" ><i class="fa fa-linkedin m-4"></i></a>
+    <a href="http://www.github.com/NIPIO" class="w3-hover-opacity td-none" target="_newtab" ><i class="fa fa-github m-4"></i></a>
+  </div>
+</div>
+{% endblock %}
